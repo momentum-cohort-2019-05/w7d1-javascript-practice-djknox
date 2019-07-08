@@ -168,9 +168,9 @@ function selectionSortWithArrayCopies(arrayOfNumbers) {
 function selectionSort(arrayOfNumbers) {
     // loop through arrayOfNumbers (sorted --> unsorted sections)
     for (let sortPosition = 0; sortPosition < arrayOfNumbers.length; sortPosition++) {
-        // compare value of arrayOfNumbers[i] to rest of array
+        // compare value of arrayOfNumbers[sortPosition] to rest of array
         for (let indexToCompare = sortPosition + 1; indexToCompare < arrayOfNumbers.length; indexToCompare++) {
-            // if a number in the array is smaller, swap its position with arrayOfNumbers[i]
+            // if a number in the array is smaller, swap its position with arrayOfNumbers[sortPosition]
             if (arrayOfNumbers[sortPosition] > arrayOfNumbers[indexToCompare]) {
                 [arrayOfNumbers[sortPosition], arrayOfNumbers[indexToCompare]] = [arrayOfNumbers[indexToCompare], arrayOfNumbers[sortPosition]]
             }
